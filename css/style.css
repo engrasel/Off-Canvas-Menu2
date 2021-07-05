@@ -76,7 +76,7 @@ nav.pc {
 nav.pc ul {
 	display: flex;
 	gap: 20px;
-	justify-content: end;
+	justify-content: flex-end;
 }
 
 
