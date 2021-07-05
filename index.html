@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <title>jQuery Responsive Side Menu with Dropdowns - jSide Menu</title>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet" />
+        <!--Material Design Iconic Font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+        <!--jSide Menu CSS-->
+        <link rel="stylesheet" href="css/jside-menu.css" />
+        <!--jSide Skins-->
+        <link rel="stylesheet" href="css/jside-skins.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+<header>
+        <!-- Start jside Menu -->
+        <nav class="pc">
+          <a href="#" class="logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+          <button class="menu-trigger pc-display-none"><i class="material-icons">menu</i></button>
+        </nav>
+
+        <div class="menu-body visibility">
+            <div class="menu-head">
+                <span class="layer">
+                    <div class="col">
+                        <div class="row for-pic">
+                            <div class="profile-pic">
+                                <img src="img/author.png" alt="engrasel" />
+                            </div>
+                        </div>
+                        <div class="row for-name">
+                            <h3 title="User Name">Engineer Rasel</h3>
+                            <span class="tagline"> Web Developer</span>
+                        </div>
+                    </div>
+                    <!--//col-->
+                </span>
+            </div>
+            <!--//menu-head-->
+            <nav class="menu-container">
+                <ul class="menu-items">
+                    <li>
+                        <a href="#1"> <i class="material-icons">widgets</i> Main item one </a>
+                    </li>
+                    <li>
+                        <a href="#1"> <i class="material-icons">bar_chart</i> Main item two </a>
+                    </li>
+                    <li class="has-sub">
+                        <span class="dropdown-heading"> <i class="material-icons">collections</i> Item three with dropdown </span>
+                        <ul>
+                            <li><a href="#2">dropdown sub item 1 </a></li>
+                            <li><a href="#2"> dropdown sub item 2 </a></li>
+                            <li><a href="#2"> dropdown sub item 3 </a></li>
+                            <li><a href="#2"> dropdown sub item 4 </a></li>
+                            <li><a href="#2"> dropdown sub item 5 </a></li>
+                            <li><a href="#2"> dropdown sub item 6 </a></li>
+                            <li><a href="#2"> dropdown sub item 7 </a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <span class="dropdown-heading"> <i class="material-icons">camera</i> Item four with dropdown </span>
+                        <ul>
+                            <li><a href="#2">sub item 1 </a></li>
+                            <li><a href="#2">sub item 2 </a></li>
+                            <li><a href="#2">sub item 3 </a></li>
+                            <li><a href="#2">sub item 4 </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#1"> <i class="material-icons">color_lens</i> Main item four </a>
+                    </li>
+                    <li>
+                        <a href="#1"> <i class="material-icons">pie_chart</i> Main item five </a>
+                    </li>
+                    <li>
+                        <a href="#1"> <i class="material-icons">highlight</i> Main item five </a>
+                    </li>
+                    <li>
+                        <a href="#1"> <i class="material-icons">format_size</i> Main item six </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--End jSide Menu-->
+</header>
+
+<section class="banner">
+  <div class="banner-info">
+    <h1 class="heading1">Hello i,m Rasel</h1>
+    <p class="my-10">Hi, I am RASEL a computer graduate & Full-Stack Web Developer specialized in Shopify and WordPress. I work with a team of Highly Experienced IT professionals and worked with a lot of Local Brands in the USA and I am still working with a lot of international WordPress Website, Shopify Stores at the moment. I do have the necessary techniques and knowledge to succeed! Let's get connected and let me help you make some money!</p>
+    <div class="cta-btn">
+      <a href="https://www.fiverr.com/engrasel_?up_rollout=true" target="_blank" class="button1">Hire me</a>
+    </div>
+  </div>
+  <div class="banner-img">
+    <img src="img/banner-img.jpg" alt="">
+  </div>
+</section>
+
+
+
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!--jSide Menu Js-->
+        <script src="js/jquery.jside.menu.js"></script>
+        <script>
+
+            $(function () {
+                $(".menu-container").jSideMenu({
+                    jSidePosition: "position-right", //possible options position-left or position-right
+                    jSideSticky: true, // menubar will be fixed on top, false to set static
+                    jSideSkin: "default-skin", // to apply custom skin, just put its name in this string
+                });
+            });
+
+        </script>
+    </body>
+</html>

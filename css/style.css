@@ -1,0 +1,90 @@
+*{
+
+  margin: 0;
+  padding: 0;
+}
+body{
+	/*font-family: Questrial;*/
+	font-size: 18px;
+	line-height: 24px;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.my-5{
+	margin: 5px 0;
+}
+.my-10{
+	margin: 10px 0;
+}
+.my-15{
+	margin: 15px 0;
+}
+.py-5{
+	padding: 5px 0;
+}
+.py-10{
+	padding: 10px 0;
+}
+.py-15{
+	padding: 15px 0;
+}
+
+
+.heading1{
+	font-size: 50px;
+	line-height: 60px;
+}
+.button1{
+	padding: 10px 30px;
+	background-image: linear-gradient(orange,tomato);
+	display: table;
+	border-radius: 5px;
+}
+/* Banner */
+.banner {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner-info{}
+.banner .banner-img img{
+  width: 100%;
+}
+
+/*pc menu*/
+.pc-display-none{
+	display: none;
+}
+nav.pc {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	min-height: 35px;
+	background-color: #222;
+	align-items: center;
+	padding: 0 5%;
+}
+.logo img{
+	width: 150px;
+}
+nav.pc ul {
+	display: flex;
+	gap: 20px;
+	justify-content: end;
+}
+
+
+/*=================== Responsive  =====================*/
+@media only screen and (max-width: 992px){
+nav.pc ul{display: none;}
+nav.pc button{display: block;}
+
+/*------- banner -------*/
+.banner{grid-template-columns: 100%;}
+}
