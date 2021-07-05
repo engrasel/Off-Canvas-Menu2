@@ -78,9 +78,9 @@ nav.pc ul {
 	gap: 20px;
 	justify-content: flex-end;
 }
-nav.pc ul li a{
-	color:#fff;
-	text-transform:capitalize;
+nav.pc ul li a {
+    color: #fff;
+    text-transform: capitalize;
 }
 
 
